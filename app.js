@@ -1,112 +1,231 @@
-//Question 1//
-console.log("HelloWorld");
-console.log("My name is Syed Ali Adnan");
-let myName = "Syed Ali Adnan";
-//let myAge = '28';
-let myCity = "Karachi";
-console.log(myName);
-console.log(myAge);
-console.log(myCity);
+Section 1:
+
+1. JavaScript kya hoti hai?
+JavaScript ek programming language hai jo websites ko interactive banati hai.
+Ye browser ke andar run hoti hai.
+
+2. JavaScript ka use kaha hota hai?
+
+1.Web development (buttons, forms, sliders)
+2.Server-side (Node.js)
+3.Mobile apps (React Native)
 
 
-/*Question 2
-1. JavaScript ka use kis liya hota hai?
-ans. Java script is a programming language. Used to make website dynamic and interactive.
-2. Kiya javascript browser ma run hosakti hai?
-Ans. Yes 
-3. High level language ka matlb kia hai?
-Ans. its means this is closed to human language.
-4.Compiler aur interpreter mai sy javascript kis par kam krti hai?
-Ans. Both use in modern days.
-5. kia javascriptfronent k liya use hoti hai?
-Ans. yes 
-*/
+3. Browser JS ko kaise run karta hai?
+Browser ke andar JavaScript Engine hota hai (like V8), jo code ko execute karta hai.
+
+4. JS compiled hai ya interpreted?
+JavaScript interpreted language kehlati hai (but internally JIT use hota hai).
+
+5. Hello World:
+console.log("Hello World");
+
+Section 2: Interpreter vs Compiler
+
+6. Interpreter kya hota hai?
+Line-by-line code execute karta hai.
+
+7. Compiler kya hota hai?
+Poora code ek baar mein machine code mein convert karta hai.
+
+8. JS interpreter-based kyun?
+Kyuki browser usay line-by-line execute karta hai.
+
+9. 2 differences:
+
+Interpreter  line by line
+Interpreter slow
+
+Compiler  full code ek baar
+Compiler fast
 
 
-//Question3//
+10. Compiler language example:
+C, C++
 
-let num = '30';
-const myNam = "Ali";
-var myAge ='28';
-
-var aboveResult = "Result Check"
-console.log(aboveResult);
-var aboveResult = "edit result"
-console.log(aboveResult);
-
-//Question 4
-
-var string = "Syed Ali Adnan";
-//var num = '30';
-var bolean = true;
-var empty ="null";
-var nul ="";
+🟡 Section 3: Variables (11–20)
+11. Variable kya hota hai?
+Data store karne ka container.
+12. var, let, const difference:
 
 
-//question 5
+var → old
 
-var a = "ali"
-console.log(typeof a);
+let → changeable
 
-var b ='3';
-console.log(typeof b);
+const → fixed
 
-var c =true;
-console.log(typeof c);
+13. var scope:
+Function scope
 
-var d = 
-console.log(typeof d);
+14. let scope:
+Block scope
 
-var e=[];
-console.log(typeof e);
+15. const use:
+Jab value change nahi karni ho
 
-//question 6
- let addision = 2+2;
- console.log("Result = "+addision);
- let subtraction = 5-2;
- console.log("Result = "+ subtraction);
- let multiplication = 5*2;
- console.log("Result = "+ multiplication);
- let division = 5/2;
- console.log("Result = "+ division);
- let reminder = 5%2;
- console.log("Result = "+ reminder);
- 
+16. const reassign?
+ Nahi
 
- //question 7
-
- let comp = 5=="5"
- console.log(comp);
- let comp2 = 5==="5"
- console.log(comp2);
- let comp3 = 10>5
- console.log(comp3);
- let comp4 = 3<1
- console.log(comp4);
-
- //question 8
-
- x =5
- x++
+17. Output:
+var x = 10;var x = 20;
 console.log(x);
- y=5
- ++y
- console.log(y);
- 
- x =5
- x--
+ 20
+
+18. Output:
+let y = 10;y = 15;
+console.log(y);
+15
+
+19.Error:
+const z = 5;
+z = 10;
+
+Error: Assignment to constant variable
+
+Section 4: Data Types
+
+21. Kitne types?
+2 types: Primitive & Non-primitive
+
+22. Primitive types:
+string
+number
+boolean
+null
+undefined
+bigint
+symbol
+
+
+23. string:
+Text data
+let name = "Ali";
+
+24. number:
+Numeric value
+let age = 25;
+
+25. boolean:
+True / False
+
+26. null vs undefined:
+
+null  intentionally empty
+
+undefined  value assign nahi hui
+
+
+27. Object:
+Key-value pair
+let user = {name: "Ali"};
+
+28. Array:
+List of values
+let arr = [1, 2, 3];
+
+🟡 Section 5: typeof
+29. typeof kya karta hai?
+Data type batata hai
+
+30.
+typeof "Hello"
+string
+
+31.
+typeof 123
+number
+
+32.
+typeof null
+object (JS bug)
+
+Section 6: Truthy & Falsy
+
+33. Truthy value:
+Jo true treat hoti ho
+
+34. Falsy values:
+
+false
+0
+""
+null
+undefined
+NaN
+
+
+35. Output:
+if (0) { console.log("Yes");} else { console.log("No");}
+ No
+
+36. Output:
+if ("Hello") { console.log("True");}
+ True
+
+37. false, 0, ""
+ Falsy
+
+Section 7: Operators
+
+38. Arithmetic operators:
+
+/ %
+
+39. Output:
+let a = 5 + 3 * 2;
+console.log(a);
+ 11
+
+40. = vs ==
+=  assign
+
+
+==  compare (loose)
+
+
+41. === kyun use hota hai?
+Strict comparison (type + value)
+
+42. Output:
+5 == "5"
+ true
+
+Section 8: Comparison Operators 
+
+43. Operators:
+
+< >= <= == === !=
+
+44.
+10 > 5
+ true
+
+45.
+10 === "10"
+ false
+
+Section 9: Logical Operators
+
+46. Operators:
+&& || !
+
+47.
+true && false
+ false
+
+48.
+true || false
+ true
+
+Section 10: Increment / Decrement
+
+49.
+let x = 5;x++;
 console.log(x);
- y=5
- --y
- console.log(y);
+ 6
 
- //question 9
-
- num1 = 10;
- num2 = 15;
-
- console.log(num1+num2);
- console.log(num1 -num2);
- console.log(num1 *num2);
- console.log(num1 /num2);
- 
+50.
+let y = 5;
+console.log(++y);
+ 6
